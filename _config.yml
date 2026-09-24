@@ -1,0 +1,76 @@
+title: Website title
+# This appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+topnav_title: Website title
+# Optional: this appears on the top navigation bar next to the main_logo.svg icon
+
+description: "Example of ELIXIR toolkit theme as a remote jekyll theme"
+# Metadata description of the website
+
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
+
+exclude:
+  - README.md
+  - vendor
+  - Gemfile
+
+defaults:
+# Define here page metadata attributes for all pages at once or on specific directories. More information: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:basename
+      layout: "page"
+      sidebar: main
+
+theme_variables: 
+  # git_host: GitHub
+  # back_to_top: true
+  # dev-info-banner: false
+  # privacy_statement_url: /privacy
+  # github_buttons: 
+  #   position: top
+  #   edit_me: true
+  #   open_issue: true
+  #   history: true
+  # datatables:
+  #   searchbuilder: True
+  # headings:
+  #   related-pages: Related pages
+  #   more-information-tiles: More information
+  #   resource-table-all: Tools and resources on this page
+  #   resource-table-all-collapse: false
+  #   affiliation-tiles-page: Affiliations
+  #   contributor-minitiles-page: Contributors
+  # toc:
+  #   min_headings: 2
+  #   headings: 'h2'
+  # topnav:
+    # theme: light
+    # brand_logo: assets/img/main_logo.svg
+    # github: true
+    # twitter: false
+    # bluesky: false
+    # linkedin: false
+    # fosstodon: false
+  # theme_color: 0d6efd
+  # fonts:
+  #   - url towards a font
+
+plugins:
+  - elixir-toolkit-theme-plugins
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
+  - webrick
+
+# --- Missing in gitlab: ---
+# github:
+#   repository_url: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme
+#   source:
+#     branch: main
+
