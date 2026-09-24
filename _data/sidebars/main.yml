@@ -9,3 +9,5 @@ subitems:
     url: /2026-09-24-test-action
   - title: test filename
     url: /test-filename
+  - title: added page
+    url: /added-page
