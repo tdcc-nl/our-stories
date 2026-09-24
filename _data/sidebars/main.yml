@@ -5,5 +5,5 @@ subitems:
     url: /example_page
   - title: CMS page
     url: /cms-page
-
-  
+  - title: test action
+    url: /2026-09-24-test-action
