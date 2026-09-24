@@ -4,6 +4,7 @@ content:
     label: Pages
     type: collection
     path: pages
+    filename: "{title}.md"
     fields:
       - name: title
         type: string
